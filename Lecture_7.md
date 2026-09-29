@@ -53,3 +53,28 @@ Here is a typo in the following image, the last line is $w_{ridge}, b_{ridge} = 
 
 Next homework will ask you to prove this:
 ![closed-form solution](./static/07-closed_form_solution.png)
+
+## Regularizer choice
+
+Ridge: *Strictly convex and differentiable, but every weight stays non-zero: dense solutions.* ("dense" means almost all dimension of w are not 0).
+![ridge](./static/07-ridge.png)
+
+Lasso: *Convex but not strictly; not differentiable at 0 — which is exactly why it produces sparse solutions.* ("sparse" means a lot of dimension of w are 0)
+![lasso](./static/07-lasso.png)
+
+Elastic net: *Strictly convex (unique solution) and still sparsity-inducing; here α=0.6.*
+![elastic net](./static/07-elastic_net.png)
+
+$\mathcal{l}_p$: *Non-convex and not differentiable; very sparse, but the solution found depends on initialization. Here p=0.5.*
+![l_p](./static/07-lp.png)
+
+## Prior and regularizer
+
+Prior: the probability distribution of w.
+
+Changing the prior will change the regularizer:
+![prior and regularizers](./static/07-prior_regularizers.png)
+
+## Summary
+
+![summary](./static/07-summary.png)
