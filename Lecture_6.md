@@ -28,8 +28,8 @@ If we substitute hinge loss with logistic loss, then we are moving from SVM to l
 > [!Note]
 > Although it is called "regression", logistic regression is actually used in classification problems (in ML).\
 > *It is called regression because mathematically, it is linear regression—just performed on the log-odds (a continuous quantity) rather than directly on the discrete class labels.*
-![logistic regression](./static/06-logistic_regression.png)
 
+![logistic regression](./static/06-logistic_regression.png)
 
 > [!Note]
 > We use 1/n because in ML, we usually care about average training loss, rather than cumulative training loss.
