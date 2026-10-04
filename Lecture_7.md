@@ -39,12 +39,20 @@ Note: here we assume $x \sim \mathcal{N}(w^Tx + b, \sigma^2)$ obey gaussian dist
 
 ![a probabilistic perspective](./static/07-least_square_probabilisitic.png)
 
+### MLE gives us OLS
+
+Ordinary Least Squares (OLS) Regression: ${arg}{min}_{w, b} \frac{1}{n} \sum_{i=1}^n {(y_i - w^Tx_i - b)}^2$
+
 With the assumption above, we then apply MLE, we can get square loss!
 ![MLE](./static/07-mle.png)
 
 From line 1 to line 6, these steps apply to all MLE (same as last [lecture](./Lecture_6.md/#mle)). So, in the prelim, you can skip these steps. Line 7 is where we start to apply our assumption. As we can see, the square comes from the square in gaussian distribution.
 
-In conclusion: we prefer square loss function to absolute loss function because Gaussian distribution can lead to it (and Gaussian distribution is more common). And no matter the variance of Gaussian (σ), we have same target to optimize (the last line is irrelevant to σ).
+In conclusion: we prefer square loss function to absolute loss function because Gaussian distribution can lead to it (and Gaussian distribution is more common). And no matter the variance of Gaussian (σ), we have same target to optimize (the last line is irrelevant to σ). The following ridge regression uses same loss function, it is also due to gaussian distribution.
+
+### MAP gives us ridge
+
+Ridge regression is OLS + regularization: ${arg}{min}_{w, b} \frac{1}{n} \sum_{i=1}^n {(y_i - w^Tx_i - b)}^2 + \lambda ||w||_2^2$
 
 [MLE and MAP](./Lecture_6.md/#probabilistic-perspective-of-logistic-regression)
 
