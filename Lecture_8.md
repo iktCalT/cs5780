@@ -68,7 +68,7 @@ Q: will it fall into infinite loop? -> if step is too large possible. If each st
 
 When data set is too large, we cannot calculate gradient for every data point just to update w only one step (**batch gradient descent**). So can use [**mini-batch gradient descent**](#mini-batching):
 ![mini-batch](./static/08-mini_batch.png)
-> $\mathcal{l}(w^{(t)} \cdot x_i, y_i)$: loss function; R: regulation term
+> $\ell(w^{(t)} \cdot x_i, y_i)$: loss function; R: regulation term
 
 Goal: make the first formula as efficient as possible. (image there will be 50 trillion pairs of x and y, if we use batch gradient descent, it will take long before updating one step).
 

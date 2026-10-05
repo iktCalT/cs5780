@@ -73,7 +73,7 @@ Lasso: *Convex but not strictly; not differentiable at 0 — which is exactly wh
 Elastic net: *Strictly convex (unique solution) and still sparsity-inducing; here α=0.6.*
 ![elastic net](./static/07-elastic_net.png)
 
-$\mathcal{l}_p$: *Non-convex and not differentiable; very sparse, but the solution found depends on initialization. Here p=0.5.*
+$\ell_p$: *Non-convex and not differentiable; very sparse, but the solution found depends on initialization. Here p=0.5.*
 ![l_p](./static/07-lp.png)
 
 ## Prior and regularizer
